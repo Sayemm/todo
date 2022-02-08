@@ -6,6 +6,7 @@ import listData from '../../data/data';
 const AxiosScreen: React.FC = () => {
   const renderItem = ({item, index}: {item: any; index: number}) => {
     console.log(typeof index);
+
     return (
       <BoxComponenet
         userId={item.userId}
@@ -21,6 +22,7 @@ const AxiosScreen: React.FC = () => {
       <FlatList
         data={listData}
         renderItem={renderItem}
+        keyExtractor={(item, index) => item.title + index}
         showsVerticalScrollIndicator={false}
       />
     </SafeAreaView>
