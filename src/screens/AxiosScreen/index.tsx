@@ -22,7 +22,7 @@ const AxiosScreen: React.FC = () => {
       <FlatList
         data={listData}
         renderItem={renderItem}
-        keyExtractor={(item, index) => item.title + index}
+        keyExtractor={(item, index) => 'F' + index}
         showsVerticalScrollIndicator={false}
       />
     </SafeAreaView>
