@@ -5,6 +5,7 @@ import listData from '../../data/data';
 
 const AxiosScreen: React.FC = () => {
   const renderItem = ({item, index}: {item: any; index: number}) => {
+    // TODO remove any
     console.log(typeof index);
 
     return (
